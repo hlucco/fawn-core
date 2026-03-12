@@ -5,9 +5,7 @@ A TypeScript library for knowledge extraction and semantic search over conversat
 ## Installation
 
 ```bash
-npm install fawn-core
-# or
-pnpm add fawn-core
+npm install fawn-memory
 ```
 
 ## Quick Start
