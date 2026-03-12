@@ -1,0 +1,54 @@
+{
+  "name": "fawn-core",
+  "version": "0.1.0",
+  "description": "Knowledge extraction and semantic search over conversational text",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && shx cp src/knowpro/*Schema.ts dist/knowpro/",
+    "lint": "eslint .",
+    "clean": "rimraf dist",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "keywords": [
+    "knowledge-extraction",
+    "semantic-search",
+    "nlp",
+    "conversation",
+    "typechat"
+  ],
+  "author": "hlucco",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "eslint": "^9.39.2",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.1.8",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^17.2.3",
+    "natural": "^8.1.0",
+    "typechat": "^0.1.1",
+    "wink-lemmatizer": "^3.0.4",
+    "wordnet-db": "^3.1.14"
+  },
+  "optionalDependencies": {
+    "faiss-node": "^0.5.1",
+    "hnsw": "^1.0.3"
+  }
+}
