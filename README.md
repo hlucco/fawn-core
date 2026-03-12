@@ -1,6 +1,6 @@
 # fawn-core
 
-A TypeScript library for knowledge extraction and semantic search over conversational text. Fawn processes messages to extract structured knowledge (entities, actions, topics) and enables natural language question-answering over that knowledge.
+A TypeScript library for knowledge extraction and semantic search over conversational text. Fawn processes messages to extract structured knowledge (entities, actions, topics) and enables natural language question-answering over that knowledge. Derivative of the original TypeAgent knowledge processor: https://github.com/microsoft/TypeAgent/tree/main/ts/packages/knowPro.
 
 ## Installation
 
